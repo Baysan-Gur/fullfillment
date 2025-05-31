@@ -1,0 +1,133 @@
+.mainContent {
+  color: white;
+  text-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 20px #ec4899;
+}
+
+.neonPink {
+  color: #ec4899;
+  text-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 20px #ec4899;
+}
+
+.contentWrapper {
+  padding-bottom: 200px;
+}
+
+
+.descriptionBlock {
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgba(236, 72, 153, 0.9),
+    rgba(88, 28, 135, 0.9)
+  );
+  margin: 0 0 70px 0;
+  border-radius: 30px;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.scrollWrap {
+  padding-top: 100px;
+}
+
+.descriptionText {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  width: 60%;
+  margin: 0px;
+}
+
+.descriptionText2 {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  width: 40%;
+}
+
+.descriptionText span {
+  color: #581C87;;
+  font-weight: 700;
+}
+
+.descriptionBlock button {
+  color: #494949;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  width: 300px;
+  height: 60px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .descriptionText {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .descriptionText2 {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .advantagesText {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .advantagesClass {
+    width: 100%;
+    height: auto;
+  }
+
+  .advantagesDescription {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .advantagesDescription2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .descriptionBlock {
+    padding: 40px 40px;
+    margin-bottom: 150px;
+  }
+
+  .descriptionBlock button {
+    width: 100%;
+  }
+
+  .advantagesBlock {
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeInUp 0.8s ease-out forwards;
+}

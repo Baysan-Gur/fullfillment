@@ -1,0 +1,75 @@
+.appWrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -3;
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.bgImageAlt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -3;
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.bgImageAlt {
+  z-index: -2;
+  opacity: 0;
+}
+
+.bgImageAlt.active {
+  opacity: 1;
+}
+
+.gradientOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(to right, #ec4899, #581c87);
+  opacity: 0.3;
+}
+
+.app {
+  padding-top: 110px;
+  margin: auto;
+  width: 80%;
+  max-width: 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .app {
+    padding-top: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding-top: 110px;
+  }
+}

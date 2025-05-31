@@ -1,0 +1,101 @@
+.calculatorWrapper {
+  max-width: 900px;
+  margin: 0 auto 100px auto;
+  background: linear-gradient(to right, rgba(236, 72, 153, 0.9), rgba(88, 28, 135, 0.9));
+  border-radius: 30px;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  background: linear-gradient(to right, rgba(236, 72, 153, 0.9), rgba(88, 28, 135, 0.9));
+  padding: 50px 40px;
+  border-radius: 30px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #ec4899;
+}
+
+.label {
+  display: block;
+  margin: 20px 0 8px;
+  font-weight: 600;
+  text-align: left;
+  span::before{content:"\f547" ; font-family: 'Font Awesome 5 Free';}
+}
+
+
+
+.input,
+.select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.sectionTitle {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  color: white;
+  text-shadow: 0 0 5px #ec4899;
+}
+
+.checkboxGroup {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 400;
+  gap: 10px;
+}
+
+.button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  color: #494949;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f3e8ff;
+}
+
+.result {
+  margin-top: 30px;
+  background-color: white;
+  color: #494949;
+  text-shadow: none;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .calculatorWrapper {
+    padding: 30px 20px;
+  }
+}

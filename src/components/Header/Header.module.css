@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 20px 30px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.leftBlock {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.centerBlock {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex: 1;
+}
+
+.centerBlock button {
+  color: #581c87;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  border-radius: 12px;
+  background-color: white;
+  padding: 10px 20px;
+  border: 2px solid #ec4899;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rightBlock {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contactIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.name {
+  color: #ec4899;
+  font-weight: 800;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  color: #494949;
+  font-size: 16px;
+}
+
+.fulfil {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contactIcon {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.phoneNumber {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.sidebarIcon {
+  background: none;
+  border: none;
+}
+
+.sideBarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9998;
+  transition: background-color 0.3s ease;
+}
+
+.navigation button {
+  color: #494949;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: white;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #494949;
+}
+
+@media (max-width: 1024px) {
+  .navigation {
+    display: none;
+  }
+
+  .phoneNumber {
+    display: none;
+  }
+
+  .contactIcon {
+    gap: 10px;
+  }
+
+  .header {
+    padding: 10px 20px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
