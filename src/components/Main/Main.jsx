@@ -16,8 +16,8 @@ const Main = ({ calculatorRef }) => {
         <div className={styles.descriptionBlock}>
           <p className={styles.descriptionText}>
             Компания <span className={styles.neonPink}>Формат24.рф</span> — это
-            команда профессионалов с уникальным опытом работы в администрации
-            Wildberries и практикой ведения собственных продаж на маркетплейсах.
+            команда профессионалов с уникальным опытом работы в Wildberries и
+            практикой ведения собственных продаж на маркетплейсах.
           </p>
           <p className={styles.descriptionText2}>
             Мы объединяем инсайдерские знания платформы с глубоким пониманием
