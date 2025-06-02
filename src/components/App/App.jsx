@@ -74,7 +74,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename='/'>
       <div className={styles.appWrapper}>
         <AppRoutes
           calculatorRef={calculatorRef}
