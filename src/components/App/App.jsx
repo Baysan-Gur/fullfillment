@@ -74,7 +74,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router basename='/fullfillment'>
+    <Router>
       <div className={styles.appWrapper}>
         <AppRoutes
           calculatorRef={calculatorRef}
