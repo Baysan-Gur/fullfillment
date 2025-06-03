@@ -12,7 +12,6 @@
   padding-bottom: 200px;
 }
 
-
 .descriptionBlock {
   color: white;
   background: linear-gradient(
@@ -29,6 +28,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-shadow: 0 12px 24px rgba(236, 72, 153, 0.9);
 }
 
 .scrollWrap {
@@ -51,7 +51,7 @@
 }
 
 .descriptionText span {
-  color: #581C87;;
+  color: #581c87;
   font-weight: 700;
 }
 
@@ -67,9 +67,6 @@
   width: 300px;
   height: 60px;
 }
-
-
-
 
 @media (max-width: 1024px) {
   .descriptionText {
