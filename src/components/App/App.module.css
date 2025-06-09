@@ -45,12 +45,12 @@
   width: 100%;
   height: 100vh;
   z-index: -1;
-  background: linear-gradient(to right, #ec4899, #581c87);
+  background: linear-gradient(to right, #0A2463, #003366, #1A237E);
   opacity: 0.3;
 }
 
 .app {
-  padding-top: 110px;
+  padding-top: 115px;
   margin: auto;
   width: 80%;
   max-width: 100vw;

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 import SidebarIcon from "../fon-icon/sidebar-icon.svg";
 import TelegramIcon from "../fon-icon/telegram-icon.png";
-import FulfillmentIcon from "../fon-icon/fulfillment-icon.png";
 import WhatsapIcon from "../fon-icon/whatsap-icon.png";
 import Sidebar from "../Sidebar/Sidebar";
 import { useNavigate } from "react-router-dom";
@@ -30,8 +29,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.leftBlock} onClick={() => navigate("/")}>
-        <img className={styles.icon} src={FulfillmentIcon} alt="Логотип" />
-        <p className={styles.name}>Формат24.рф</p>
+        <p className={styles.companyName}>Формат24.рф</p>
       </div>
 
       {!isMobile && (
@@ -51,15 +49,15 @@ const Header = () => {
 
       <div className={styles.rightBlock}>
         <div className={styles.contactIcons}>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/+79104222932" target="_blank" rel="noopener noreferrer">
             <img className={styles.icon} src={TelegramIcon} alt="Telegram" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/79104222932" target="_blank" rel="noopener noreferrer">
             <img className={styles.icon} src={WhatsapIcon} alt="WhatsApp" />
           </a>
         </div>
         <p className={styles.phoneNumber}>
-          +7 (963) 598-38-04
+          +7 (910) 422-29-32
         </p>
       </div>
 

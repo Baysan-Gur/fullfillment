@@ -1,11 +1,12 @@
 .mainContent {
   color: white;
-  text-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 20px #ec4899;
+text-shadow: 0 0 5px #6c0a13, 0 0 10px #3a0209, 0 0 20px #200105;
 }
 
 .neonPink {
-  color: #ec4899;
-  text-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 20px #ec4899;
+  color: #48030b;
+  font-weight: 700;
+  text-shadow: none;
 }
 
 .contentWrapper {
@@ -14,11 +15,7 @@
 
 .descriptionBlock {
   color: white;
-  background: linear-gradient(
-    to right,
-    rgba(236, 72, 153, 0.9),
-    rgba(88, 28, 135, 0.9)
-  );
+  background: rgba(223, 223, 228, 0.9);
   margin: 0 0 70px 0;
   border-radius: 30px;
   padding: 50px 40px;
@@ -28,7 +25,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 12px 24px rgba(236, 72, 153, 0.9);
+  box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
 }
 
 .scrollWrap {
@@ -51,21 +48,23 @@
 }
 
 .descriptionText span {
-  color: #581c87;
+  color: #48030b;
   font-weight: 700;
 }
 
 .descriptionBlock button {
-  color: #494949;
+  color: white;
   font-size: 14px;
   font-family: "Manrope", sans-serif;
   line-height: 1.55;
   font-weight: 400;
   border-radius: 10px;
-  background-color: white;
+  background-color: #48030b;
   border: none;
   width: 300px;
   height: 60px;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
 }
 
 @media (max-width: 1024px) {

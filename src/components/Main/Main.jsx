@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Main.module.css";
 import Calculator from "../Calculator/Calculator";
+import HowWeWorkSlider from "../HowWeWorkSlider/HowWeWorkSlider";
 
 const Main = ({ calculatorRef }) => {
   const handleScroll = () => {
@@ -29,6 +30,7 @@ const Main = ({ calculatorRef }) => {
 
         <div ref={calculatorRef} className={styles.scrollWrap}>
           <Calculator />
+          <HowWeWorkSlider />
         </div>
       </div>
     </div>

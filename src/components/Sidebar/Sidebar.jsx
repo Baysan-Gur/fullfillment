@@ -28,14 +28,14 @@ const Sidebar = ({ handleOpenSidebar }) => {
           <p onClick={() => handleClick("/storage")}>Хранение</p>
         </div>
 
-        <a href="tel:+79635983804" className={styles.phoneNumber}>
-          +7 (963) 598-38-04
+        <a href="tel:+79104222932" className={styles.phoneNumber}>
+          +7 (910) 422-29-32
         </a>
       </div>
 
       <div className={styles.sidebarRightBlock}>
-        <a href="tel:+79635983804" className={styles.phoneNumberSidebar}>
-          +7 (963) 598-38-04
+        <a href="tel:+79104222932" className={styles.phoneNumberSidebar}>
+          +7 (910) 422-10-32
         </a>
       </div>
     </>
