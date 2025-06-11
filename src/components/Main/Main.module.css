@@ -1,6 +1,6 @@
 .mainContent {
   color: white;
-text-shadow: 0 0 5px #6c0a13, 0 0 10px #3a0209, 0 0 20px #200105;
+  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 .neonPink {
@@ -17,6 +17,7 @@ text-shadow: 0 0 5px #6c0a13, 0 0 10px #3a0209, 0 0 20px #200105;
   color: white;
   background: rgba(223, 223, 228, 0.9);
   margin: 0 0 70px 0;
+  margin-top: 30px;
   border-radius: 30px;
   padding: 50px 40px;
   box-sizing: border-box;
@@ -29,7 +30,11 @@ text-shadow: 0 0 5px #6c0a13, 0 0 10px #3a0209, 0 0 20px #200105;
 }
 
 .scrollWrap {
-  padding-top: 100px;
+  padding-top: 110px;
+}
+
+.scrollTarget {
+  scroll-margin-top: 120px;
 }
 
 .descriptionText {
@@ -67,6 +72,18 @@ text-shadow: 0 0 5px #6c0a13, 0 0 10px #3a0209, 0 0 20px #200105;
   transition: background-color 0.3 ease;
 }
 
+.section {
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
+.section:first-of-type {
+  margin-top: 0;
+}
+
+
+
+
 @media (max-width: 1024px) {
   .descriptionText {
     font-size: 28px;
@@ -95,6 +112,16 @@ text-shadow: 0 0 5px #6c0a13, 0 0 10px #3a0209, 0 0 20px #200105;
 
   .advantagesDescription2 {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin-top: 40px;
+  }
+
+  .scrollTarget {
+    scroll-margin-top: 100px;
   }
 }
 

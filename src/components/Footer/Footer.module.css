@@ -1,0 +1,50 @@
+.footer {
+  background: #48030b;
+  color: white;
+  padding: 50px 30px;
+  border-radius: 30px;
+  margin-top: 60px;
+  font-family: "Manrope", sans-serif;
+  text-align: left;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.column {
+  flex: 1 1 200px;
+  text-shadow: none;
+}
+
+.column h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+    text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
+
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+    text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
+
+}
+
+.column li:hover {
+  color: #800020;
+  text-shadow: none;
+}

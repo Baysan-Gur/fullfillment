@@ -39,7 +39,9 @@ const HowWeWorkSlider = () => (
   <div className={styles.sliderSection}>
     <div className={styles.headerBlock}>
       <h2 className={styles.title}>Как мы работаем?</h2>
-      <p className={styles.subtitle}>Ваш фулфилмент — всего за 4 простых шага</p>
+      <p className={styles.subtitle}>
+        Ваш фулфилмент — всего за 4 простых шага
+      </p>
     </div>
 
     <div className={styles.sliderWrapper}>
@@ -58,13 +60,17 @@ const HowWeWorkSlider = () => (
           <SwiperSlide key={i}>
             <div className={styles.fixedHeight}>
               <div className={styles.stepCard}>
-                <img
-                  src={step.image}
-                  alt={step.title}
-                  className={`${styles.image} ${i === 0 ? styles.firstImage : ""}`}
-                />
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
+                <div className={styles.imageContainer}>
+                  <img
+                    src={step.image}
+                    alt={step.title}
+                    className={styles.image}
+                  />
+                </div>
+                <div className={styles.stepCardTextContainer}>
+                  <p className={styles.stepCardTitle}>{step.title}</p>
+                  <p>{step.text}</p>
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -75,6 +81,3 @@ const HowWeWorkSlider = () => (
 );
 
 export default HowWeWorkSlider;
-
-
-

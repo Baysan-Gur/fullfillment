@@ -1,21 +1,41 @@
 .contentWrapper {
-  background: linear-gradient(
-    to right,
-    rgba(236, 72, 153, 0.9),
-    rgba(88, 28, 135, 0.9)
-  );
+  background: rgba(223, 223, 228, 0.9);
   padding: 60px 40px;
   margin-bottom: 24px;
   border-radius: 30px;
   text-align: center;
-  box-shadow: 0 12px 24px rgba(236, 72, 153, 0.9);
+  box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
 }
 
-.comingSoonText {
-  color: white;
+.comingSoonTitle {
+  color: #48030b;
   font-size: 28px;
-  font-weight: 500;
-  text-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 20px #ec4899;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: none;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.spinIcon {
+  font-size: 48px;
+  animation: spin 1.5s linear infinite;
+  color: #48030b;
+  text-shadow: 0 0 8px rgba(72, 3, 11, 0.8);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes fadeInUp {

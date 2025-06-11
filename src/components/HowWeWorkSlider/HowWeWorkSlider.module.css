@@ -1,26 +1,28 @@
 .sliderSection {
-  padding: 60px 20px;
-  position: relative;
-  text-align: center;
-  overflow: visible;
+  padding: 20px 0;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
+
 .headerBlock {
-  background: rgba(15, 20, 78, 0.9);
+    background: rgba(223, 223, 228, 0.9);
   border-radius: 30px;
   padding: 50px 40px;
-  margin: 0 50px 40px 50px;
+  margin: 0 auto 16px auto;
   max-width: 1200px;
-  box-shadow: 0 0 6px #0a2463, 0 0 12px #003366, 0 0 24px #0a2463;
   text-align: center;
   color: white;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
 }
 
 .title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 16px;
-  text-shadow: 0 0 5px #0a2463, 0 0 10px #003366, 0 0 20px #1a237e;
+  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 .subtitle {
@@ -28,14 +30,23 @@
   font-weight: 400;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 0 0 5px #0a2463, 0 0 10px #003366, 0 0 20px #1a237e;
+  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
+
 }
 
 .sliderWrapper {
   position: relative;
-  padding: 0 80px;
-  max-width: 1200px;
-  margin: 0 auto;
+
+}
+
+.sliderWrapper {
+  z-index: 1;
+  margin-top: 10px;
+  position: relative;
+}
+
+:global(.swiper-wrapper) {
+  padding: 5px 0 0;
 }
 
 .swiper-slide {
@@ -53,53 +64,52 @@
 
 .stepCard {
   width: 100%;
-  background: rgba(15, 20, 78, 0.9);
+  height: 400px;
+  background: #48030b;
   border-radius: 20px;
   padding: 30px 20px;
   color: white;
   text-align: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.stepCard:hover {
-  box-shadow: 0 0 6px #0a2463, 0 0 12px #003366, 0 0 24px #0a2463;
-  transform: translateY(-5px);
+
+.stepCardTextContainer {
+  height: 50%
 }
 
-.stepCard h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0;
-  text-shadow: 0 0 5px #0a2463, 0 0 10px #003366, 0 0 20px #1a237e;
-}
-
-.stepCard p {
-  font-size: 16px;
+.stepCardTextContainer p {
   line-height: 1.6;
-  text-shadow: 0 0 5px #0a2463, 0 0 10px #003366, 0 0 20px #1a237e;
-  margin: 0;
-  margin-top: 20px;
+  padding: 0;
+  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 .image {
   width: 100%;
-  max-width: 200px;
-  height: auto;
-  margin: 0 auto 20px;
+  height: 100%;
+  object-fit: contain;
   display: block;
 }
 
-.firstImage {
-  margin-top: 20px;
+.imageContainer {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepCardTitle {
+  font-size: 20px;
+  margin: 10px 0 ;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #e53935;
+  color: #48030b;
+  width: 500px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -108,16 +118,34 @@
 }
 
 .swiper-button-prev {
-  left: -50px;
+  left: -10px;
 }
 
 .swiper-button-next {
   right: -50px;
 }
 
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+  color: white !important;
+  text-shadow: none;
+}
+
+
+:global(.swiper-pagination-bullet) {
+  background-color: rgba(72, 3, 11, 0.4);
+  opacity: 1;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background-color: #48030b !important;
+}
+
+
+
 @media (max-width: 768px) {
   .sliderWrapper {
-    padding: 0 30px;
+    padding: 0 10px;
   }
 
   .swiper-button-prev {

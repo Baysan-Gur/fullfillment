@@ -1,0 +1,88 @@
+.footerWrapper {
+  background: rgba(223, 223, 228, 0.9);
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.innerContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.contactCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #48030b;
+  text-shadow: none;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-size: 14px;
+  color: #48030b;
+  font-weight: bold;
+  margin-bottom: 2px;
+  text-shadow: none;
+}
+
+.text {
+  color: #48030b;
+  font-size: 15px;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+.link {
+  color: #48030b;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  text-shadow: none;
+  transition: opacity 0.2s;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.mapBlock {
+  flex: 1;
+  height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .innerContent {
+    flex-direction: column;
+  }
+
+  .mapBlock {
+    height: 240px;
+  }
+
+  .footerWrapper {
+    padding: 20px;
+  }
+}

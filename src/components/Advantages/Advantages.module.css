@@ -1,29 +1,27 @@
 .advantagesMain {
-  background: linear-gradient(
-    to right,
-    rgba(236, 72, 153, 0.9),
-    rgba(88, 28, 135, 0.9)
-  );
-  box-shadow: 0 12px 24px rgba(236, 72, 153, 0.9);
+  background: rgba(223, 223, 228, 0.9);
+  box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
   border-radius: 30px;
   padding: 40px;
   margin-bottom: 30px;
   text-align: center;
   color: white;
+  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001
 }
 
 .advantagesMainTitle {
   font-size: 42px;
   font-weight: 700;
   color: white;
-  text-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899;
+  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 .title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 15px;
-  text-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 20px #ec4899;
+  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
+
   color: white;
   text-align: center;
 }
@@ -42,11 +40,7 @@
 
 .advantagesClass {
   width: 48%;
-  background: linear-gradient(
-    to right,
-    rgba(236, 72, 153, 0.9),
-    rgba(88, 28, 135, 0.9)
-  );
+  background: #48030b;
   color: white;
   padding: 30px;
   margin: 0;
@@ -58,11 +52,13 @@
   align-items: center;
   gap: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 12px 24px rgba(236, 72, 153, 0.9);
+  box-shadow: none;
 }
 
 .advantagesClass:hover {
   transform: translateY(-5px);
+    box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
+
 }
 
 .advantagesClass div:first-child {
@@ -86,7 +82,7 @@
   font-weight: 600;
   margin: 0;
   font-family: "Inter", sans-serif;
-  text-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 20px #ec4899;
+  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 .advantagesDescription2 {
@@ -95,7 +91,7 @@
   font-weight: 400;
   margin-top: 10px;
   font-family: "Inter", sans-serif;
-  text-shadow: 0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 20px #ec4899;
+  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 @media (max-width: 1024px) {
