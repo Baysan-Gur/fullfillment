@@ -2,8 +2,9 @@ import React, { useRef } from "react";
 import Header from "../Header/Header.jsx";
 import Main from "../Main/Main.jsx";
 import styles from "./App.module.css";
+import TruckBgMobile from "../../assets/truckBg-mobile.jpg";
 
-import TruckBg from "../../assets/truckBg.jpeg";
+
 
 const App = () => {
   const calculatorRef = useRef(null);
@@ -14,8 +15,11 @@ const App = () => {
 
   return (
     <>
-      <img src={TruckBg} alt="truck background" className={styles.bgImage} />
+      <div className={styles.backgroundContainer}></div>
       <div className={styles.gradientOverlay}></div>
+        <div className={styles.backgroundWrapper}>
+          <img src={TruckBgMobile} alt="Format24" className={styles.bgMobileImage}/>
+        </div>
 
       <div className={styles.app}>
         <Header

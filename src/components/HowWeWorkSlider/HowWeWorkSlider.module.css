@@ -6,7 +6,8 @@
 
 
 .headerBlock {
-    background: rgba(223, 223, 228, 0.9);
+    background: linear-gradient(90deg, rgba(142, 45, 226, 0.7) 0%, rgba(74, 0, 224, 0.7) 100%);
+    border: 2px solid white;
   border-radius: 30px;
   padding: 50px 40px;
   margin: 0 auto 16px auto;
@@ -15,14 +16,12 @@
   color: white;
   position: relative;
   z-index: 2;
-  box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
 }
 
 .title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 16px;
-  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 .subtitle {
@@ -30,7 +29,6 @@
   font-weight: 400;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 
 }
 
@@ -65,7 +63,7 @@
 .stepCard {
   width: 100%;
   height: 400px;
-  background: #48030b;
+  background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
   border-radius: 20px;
   padding: 30px 20px;
   color: white;
@@ -84,7 +82,6 @@
 .stepCardTextContainer p {
   line-height: 1.6;
   padding: 0;
-  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 .image {
@@ -108,7 +105,7 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #48030b;
+  color: rgb(108, 22, 225);
   width: 500px;
   position: absolute;
   top: 50%;
@@ -138,7 +135,7 @@
 }
 
 :global(.swiper-pagination-bullet-active) {
-  background-color: #48030b !important;
+  background-color: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%) !important;
 }
 
 

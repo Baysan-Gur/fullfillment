@@ -1,8 +1,8 @@
 .footerWrapper {
-  background: rgba(223, 223, 228, 0.9);
+background: linear-gradient(90deg, rgba(142, 45, 226, 0.7) 0%, rgba(74, 0, 224, 0.9) 100%);  
+border: 2px solid white;
   border-radius: 30px;
   padding: 40px;
-  box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
   margin: 40px auto;
   max-width: 1200px;
 }
@@ -30,7 +30,7 @@
 
 .icon {
   font-size: 24px;
-  color: #48030b;
+  color: white;
   text-shadow: none;
   display: flex;
   align-items: center;
@@ -38,21 +38,21 @@
 
 .label {
   font-size: 14px;
-  color: #48030b;
+  color: white;
   font-weight: bold;
   margin-bottom: 2px;
   text-shadow: none;
 }
 
 .text {
-  color: #48030b;
+  color: white;
   font-size: 15px;
   font-weight: 400;
   text-shadow: none;
 }
 
 .link {
-  color: #48030b;
+  color: white;
   text-decoration: none;
   font-size: 15px;
   font-weight: 400;

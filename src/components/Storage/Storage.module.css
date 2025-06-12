@@ -1,14 +1,14 @@
 .contentWrapper {
-  background: rgba(223, 223, 228, 0.9);
+background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
+border: 2px solid white;
   padding: 60px 40px;
   margin-bottom: 24px;
   border-radius: 30px;
   text-align: center;
-  box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
 }
 
 .comingSoonTitle {
-  color: #48030b;
+  color: white;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -25,8 +25,7 @@
 .spinIcon {
   font-size: 48px;
   animation: spin 1.5s linear infinite;
-  color: #48030b;
-  text-shadow: 0 0 8px rgba(72, 3, 11, 0.8);
+  color: white;
 }
 
 @keyframes spin {

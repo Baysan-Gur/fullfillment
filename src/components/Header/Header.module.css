@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: #48030b;
+  background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
   box-sizing: border-box;
 }
 
@@ -27,9 +27,8 @@
 }
 
 .centerBlock button {
-  color: #581c87;
+  color: rgb(108, 22, 225);
   font-size: 14px;
-  font-family: "Manrope", sans-serif;
   font-weight: 500;
   border-radius: 12px;
   background-color: white;
@@ -37,7 +36,7 @@
   border: 2px solid white;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: #48030b;
+  background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
   color: white;
  
 }
@@ -81,21 +80,15 @@
 
 .companyName {
   font-size: 18px;
-  font-weight: 800;
-  font-family: "Manrope", sans-serif;
+  font-weight: 500;
   color: white;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-
+  font-family: 'Blauer Nue', sans-serif;
   padding: 6px 14px;
   border: 2px solid white;
   border-radius: 30px;
   background: transparent;
-
-  box-shadow:
-    0 0 3px rgba(255, 255, 255, 0.2),
-    0 0 8px rgba(255, 255, 255, 0.15) inset;
-
   transition: all 0.2s ease;
   cursor: pointer;
   line-height: 1;
@@ -164,7 +157,6 @@
 .navigation button {
   color: #494949;
   font-size: 14px;
-  font-family: "Manrope", sans-serif;
   line-height: 1.55;
   font-weight: 400;
   border-radius: 10px;
@@ -194,5 +186,12 @@
   .icon {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media(max-width: 400px) {
+  .companyName {
+    font-size: 14px;
+    padding: 4px 8px;
   }
 }

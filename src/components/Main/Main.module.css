@@ -1,10 +1,9 @@
 .mainContent {
   color: white;
-  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 .neonPink {
-  color: #48030b;
+  color: rgb(108, 22, 225);
   font-weight: 700;
   text-shadow: none;
 }
@@ -15,7 +14,6 @@
 
 .descriptionBlock {
   color: white;
-  background: rgba(223, 223, 228, 0.9);
   margin: 0 0 70px 0;
   margin-top: 30px;
   border-radius: 30px;
@@ -26,7 +24,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
+  background: linear-gradient(
+    90deg,
+    rgba(142, 45, 226, 0.8) 0%,
+    rgba(74, 0, 224, 0.8) 100%
+  );
 }
 
 .scrollWrap {
@@ -43,6 +45,7 @@
   font-weight: 600;
   width: 60%;
   margin: 0px;
+  font-family: "Blauer Nue", sans-serif;
 }
 
 .descriptionText2 {
@@ -50,22 +53,23 @@
   font-size: 16px;
   font-weight: 400;
   width: 40%;
+  font-family: "Blauer Nue", sans-serif;
 }
 
 .descriptionText span {
-  color: #48030b;
+  color: white;
   font-weight: 700;
 }
 
 .descriptionBlock button {
   color: white;
   font-size: 14px;
-  font-family: "Manrope", sans-serif;
   line-height: 1.55;
   font-weight: 400;
   border-radius: 10px;
-  background-color: #48030b;
-  border: none;
+  border: 2px solid white;
+  background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
+
   width: 300px;
   height: 60px;
   cursor: pointer;
@@ -80,9 +84,6 @@
 .section:first-of-type {
   margin-top: 0;
 }
-
-
-
 
 @media (max-width: 1024px) {
   .descriptionText {
@@ -137,6 +138,12 @@
 
   .advantagesBlock {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .descriptionText {
+    font-size: 20px;
   }
 }
 

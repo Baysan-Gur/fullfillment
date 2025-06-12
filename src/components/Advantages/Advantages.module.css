@@ -1,26 +1,23 @@
 .advantagesMain {
-  background: rgba(223, 223, 228, 0.9);
-  box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
+    background: linear-gradient(90deg, rgba(142, 45, 226, 0.7) 0%, rgba(74, 0, 224, 0.7) 100%);
+    border: 2px solid white;
   border-radius: 30px;
   padding: 40px;
   margin-bottom: 30px;
   text-align: center;
   color: white;
-  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001
 }
 
 .advantagesMainTitle {
   font-size: 42px;
   font-weight: 700;
   color: white;
-  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 .title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 15px;
-  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 
   color: white;
   text-align: center;
@@ -40,7 +37,7 @@
 
 .advantagesClass {
   width: 48%;
-  background: #48030b;
+    background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
   color: white;
   padding: 30px;
   margin: 0;
@@ -57,12 +54,11 @@
 
 .advantagesClass:hover {
   transform: translateY(-5px);
-    box-shadow: 0 0 6px #48030b, 0 0 12px #3a0209, 0 0 24px #48030b;
 
 }
 
 .advantagesClass div:first-child {
-  background-color: white;
+  /* background-color: white; */
   width: 75px;
   height: 75px;
   border-radius: 25px;
@@ -73,7 +69,8 @@
 }
 
 .advantagesClass div img {
-  width: 80%;
+  width: 80px;
+  border-radius: 25px;
 }
 
 .advantagesDescription {
@@ -81,8 +78,6 @@
   font-size: 22px;
   font-weight: 600;
   margin: 0;
-  font-family: "Inter", sans-serif;
-  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 .advantagesDescription2 {
@@ -91,7 +86,6 @@
   font-weight: 400;
   margin-top: 10px;
   font-family: "Inter", sans-serif;
-  text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 }
 
 @media (max-width: 1024px) {

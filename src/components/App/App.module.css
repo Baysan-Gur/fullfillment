@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Blauer Nue';
+  src: url('/src/assets/fonts/Blauer-Nue-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Blauer Nue', sans-serif;
+  font-weight: 500;
+}
+
+
+
 .appWrapper {
   position: relative;
   width: 100%;
@@ -5,16 +19,17 @@
   overflow-x: hidden;
 }
 
-.bgImage {
+.backgroundContainer {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+  width: 100vw;
+  height: 110vh;
+  background-image: url("../../assets/truckBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   z-index: -3;
-  opacity: 1;
-  transition: opacity 0.9s ease-in-out;
 }
 
 .gradientOverlay {
@@ -24,7 +39,6 @@
   width: 100%;
   height: 100vh;
   z-index: -1;
-  background: linear-gradient(to right, #0A2463, #003366, #1A237E);
   opacity: 0.3;
 }
 
@@ -39,14 +53,52 @@
   z-index: 1;
 }
 
+.backgroundWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+  display: none;
+}
+
+.bgMobileImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 80% top;
+  z-index: -3;
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .app {
     padding-top: 130px;
   }
 }
 
+
 @media (max-width: 600px) {
   .app {
     padding-top: 110px;
   }
 }
+@media (max-width: 768px) {
+ .backgroundContainer {
+  display: none;
+ }
+
+ .backgroundWrapper {
+  display: block;
+ }
+
+ .bgMobileImage {
+  display: block;
+ }
+}
+
+

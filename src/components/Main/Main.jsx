@@ -36,6 +36,7 @@ const Main = ({ calculatorRef, refs }) => {
           </div>
         </section>
 
+
         <section
           ref={calculatorRef}
           className={`${styles.section} ${styles.scrollTarget}`}
@@ -45,14 +46,13 @@ const Main = ({ calculatorRef, refs }) => {
             title="Калькулятор"
             style={{
               width: "100%",
-              height: "1600px",
+              minHeight: "1700px",
               border: "none",
               borderRadius: "12px",
               background: "transparent",
             }}
           />
         </section>
-
         <section
           ref={serviceRef}
           className={`${styles.section} ${styles.scrollTarget}`}

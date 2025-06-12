@@ -1,10 +1,10 @@
 .footer {
-  background: #48030b;
+    background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
   color: white;
   padding: 50px 30px;
   border-radius: 30px;
+  border: 2px solid white;
   margin-top: 60px;
-  font-family: "Manrope", sans-serif;
   text-align: left;
 }
 
@@ -25,7 +25,6 @@
   font-weight: 700;
   margin-bottom: 15px;
   color: white;
-    text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 
 }
 
@@ -40,11 +39,10 @@
   font-size: 16px;
   cursor: pointer;
   transition: color 0.2s ease;
-    text-shadow: 0 0 5px #1a0002, 0 0 10px #0d0001, 0 0 20px #050001;
 
 }
 
 .column li:hover {
-  color: #800020;
+  color: blue;
   text-shadow: none;
 }
