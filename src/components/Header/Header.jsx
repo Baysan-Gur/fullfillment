@@ -52,14 +52,14 @@ const Header = ({ refs }) => {
 
       <div className={styles.rightBlock}>
         <div className={styles.contactIcons}>
-          <a href="https://t.me/+79104222932" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/+79295907660" target="_blank" rel="noopener noreferrer">
             <img className={styles.icon} src={TelegramIcon} alt="Telegram" />
           </a>
-          <a href="https://wa.me/79104222932" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/79295907660" target="_blank" rel="noopener noreferrer">
             <img className={styles.icon} src={WhatsapIcon} alt="WhatsApp" />
           </a>
         </div>
-        <p className={styles.phoneNumber}>+7 (910) 422-29-32</p>
+        <p className={styles.phoneNumber}>+7 (929) 590-76-60</p>
       </div>
 
       {isMobile && (

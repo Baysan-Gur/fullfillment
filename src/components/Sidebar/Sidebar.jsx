@@ -22,7 +22,7 @@ const Sidebar = ({ handleOpenSidebar, refs, isOpen }) => {
         <p onClick={() => scrollTo(storageRef)}>Хранение</p>
       </div>
 
-      <a href="tel:+79104222932" className={styles.phoneNumber}>+7 (910) 422-29-32</a>
+      <a href="tel:+79295907660" className={styles.phoneNumber}>+7 (929) 590-76-60</a>
     </div>
   );
 };

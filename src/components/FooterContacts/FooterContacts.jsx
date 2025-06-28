@@ -10,8 +10,8 @@ const FooterContacts = () => {
             <span className={styles.icon}>📞</span>
             <div>
               <p className={styles.label}>Телефон</p>
-              <a href="tel:+79104222932" className={styles.link}>
-                +7 910 422-29-32
+              <a href="tel:+79295907660" className={styles.link}>
+                +7 929 590-76-60
               </a>
             </div>
           </div>

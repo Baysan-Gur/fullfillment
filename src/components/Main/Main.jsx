@@ -6,6 +6,7 @@ import Advantages from "../Advantages/Advantages";
 import Storage from "../Storage/Storage";
 import FooterContacts from "../FooterContacts/FooterContacts";
 import Footer from "../Footer/Footer";
+import Calculator from "../Calculator/Calculator";
 
 const Main = ({ calculatorRef, refs }) => {
   const { serviceRef, howRef, advantagesRef, storageRef } = refs;
@@ -36,22 +37,11 @@ const Main = ({ calculatorRef, refs }) => {
           </div>
         </section>
 
-
         <section
           ref={calculatorRef}
           className={`${styles.section} ${styles.scrollTarget}`}
         >
-          <iframe
-            src="/calculator.html"
-            title="Калькулятор"
-            style={{
-              width: "100%",
-              minHeight: "1700px",
-              border: "none",
-              borderRadius: "12px",
-              background: "transparent",
-            }}
-          />
+          <Calculator />
         </section>
         <section
           ref={serviceRef}
