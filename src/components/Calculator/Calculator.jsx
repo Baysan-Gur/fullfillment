@@ -17,11 +17,17 @@ const warehousesList = [
   { value: "kazan", label: "Казань (Wildberries)" },
   { value: "elektrostal", label: "Электросталь (Wildberries)" },
   { value: "krasnodar", label: "Краснодар (Wildberries)" },
-  { value: "nevinomisk", label: "Невиномысск (Wildberries)" },
+  { value: "nevinomisk", label: "Невинномысск (Wildberries)" },
   { value: "podolsk", label: "Подольск (Wildberries)" },
   { value: "obukhovo", label: "Обухово (Wildberries)" },
   { value: "ryazan", label: "Рязань (Wildberries)" },
+  { value: "pushkino", label: "Пушкино (OZON)" },
+  { value: "horugvino", label: "Хоругвино (OZON)" },
+  { value: "kavkaz hub", label: "Кавказский хаб (OZON)" },
+  { value: "pavlovskaya sloboda", label: "Павловская Слобода (OZON)" },
+  { value: "sofino", label: "Софьино (OZON)" },
   { value: "grivno", label: "Гривно (OZON)" },
+  { value: "sofino", label: "Софьино (Yandex Market)" },
 ];
 
 const packingOptions = {
