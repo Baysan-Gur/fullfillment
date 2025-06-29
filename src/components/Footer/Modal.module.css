@@ -64,3 +64,10 @@
     opacity: 1;
   }
 }
+
+
+@media (max-width: 600px) {
+  .modal {
+    width: 70%;
+  }
+}
